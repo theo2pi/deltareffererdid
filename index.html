@@ -1,22 +1,29 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delta Referrer DID - Utilisez le Code B6C0EWUCEGPD8</title>
-    <meta name="description" content="Utilisez le code Delta Referrer DID B6C0EWUCEGPD8 pour une authentification sécurisée avec Delta Kim Network.">
-    <meta name="keywords" content="Delta Referrer DID, B6C0EWUCEGPD8, Delta Kim Network, identité décentralisée">
-    <meta name="author" content="Votre Nom">
+    <title>Delta Referrer DID: Use Code B6C0EWUCEGPD8 for Delta Kim</title>
+    <meta name="description" content="Join Delta Kim with the Delta Referrer DID code B6C0EWUCEGPD8. Download the app and start managing your digital assets today!">
+    <meta name="keywords" content="Delta Referrer DID, Delta Kim, B6C0EWUCEGPD8, Delta Kim referral code, decentralized finance">
+    <meta name="author" content="Delta Kim Influencer">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #1A1A1A;
+            background: linear-gradient(180deg, #1A1A1A, #2C2C2C);
             color: #FFFFFF;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
+            position: relative;
+        }
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.3;
         }
         header, main, footer {
             max-width: 800px;
@@ -27,45 +34,50 @@
         h1 {
             font-size: 2.5em;
             color: #00A3FF;
-            text-shadow: 0 0 10px rgba(0, 163, 255, 0.5);
-        }
-        h2 {
-            color: #E0E0E0;
+            text-shadow: 0 0 15px rgba(0, 163, 255, 0.8);
+            animation: pulse 2s infinite;
         }
         .referral-code {
             display: inline-block;
-            font-size: 1.5em;
+            font-size: 1.8em;
             font-weight: bold;
-            color: #00A3FF;
-            background: linear-gradient(90deg, #00A3FF, #8E2DE2);
+            color: #FFFFFF;
+            background: linear-gradient(45deg, #00A3FF, #8E2DE2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            padding: 10px 20px;
-            border: 2px solid #00A3FF;
-            border-radius: 8px;
-            margin: 20px 0;
-            animation: fadeIn 2s ease-in-out, glitch 3s infinite alternate;
+            padding: 15px 25px;
+            border: 3px solid #00A3FF;
+            border-radius: 10px;
+            margin: 30px 0;
+            animation: neon 1.5s ease-in-out infinite alternate, bounceIn 1s ease-out;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .referral-code:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 20px rgba(0, 163, 255, 0.7);
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(0, 163, 255, 0.9);
             cursor: pointer;
         }
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
+        @keyframes neon {
+            from { text-shadow: 0 0 10px #00A3FF, 0 0 20px #8E2DE2; }
+            to { text-shadow: 0 0 20px #00A3FF, 0 0 40px #8E2DE2; }
         }
-        @keyframes glitch {
-            0% { text-shadow: 0 0 5px #00A3FF, 0 0 10px #8E2DE2; }
-            50% { text-shadow: 2px 2px 5px #00A3FF, -2px -2px 10px #8E2DE2; }
-            100% { text-shadow: -2px 0 5px #00A3FF, 2px 0 10px #8E2DE2; }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin: 20px 0;
+        @keyframes bounceIn {
+            0% { opacity: 0; transform: scale(0.3); }
+            50% { opacity: 1; transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        h2 {
+            color: #E0E0E0;
+            font-size: 1.5em;
+        }
+        p {
+            font-size: 1.1em;
+            color: #B0B0B0;
         }
         a {
             color: #00A3FF;
@@ -75,49 +87,118 @@
         a:hover {
             color: #8E2DE2;
         }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
         @media (max-width: 600px) {
-            h1 { font-size: 1.8em; }
-            .referral-code { font-size: 1.2em; }
-            header, main, footer { padding: 10px; }
+            h1 { font-size: 2em; }
+            .referral-code { font-size: 1.4em; padding: 10px 15px; }
+            header, main, footer { padding: 15px; }
         }
         @media (prefers-reduced-motion: reduce) {
-            .referral-code { animation: none; }
+            .referral-code, h1 { animation: none; }
+            canvas { display: none; }
         }
     </style>
 </head>
 <body>
+    <canvas id="particles"></canvas>
     <header>
-        <h1>Delta Referrer DID : Utilisez le Code B6C0EWUCEGPD8</h1>
+        <h1>Join Delta Kim with My Referral DID: B6C0EWUCEGPD8</h1>
     </header>
     <main>
         <section>
-            <div class="referral-code">USE REFERRAL DID B6C0EWUCEGPD8</div>
-            <h2>Qu'est-ce que Delta Referrer DID ?</h2>
+            <div class="referral-code" onclick="copyCode()">USE REFERRAL DID B6C0EWUCEGPD8</div>
+            <h2>What is Delta Kim?</h2>
             <p>
-                Delta Referrer DID, développé par <a href="https://www.delta.kim/en/download">Delta Kim Network</a>, est une solution d'<strong>identité décentralisée</strong> qui permet une authentification sécurisée et privée. Utilisez le code <strong>B6C0EWUCEGPD8</strong> pour rejoindre la plateforme et bénéficier d'une gestion d'identité numérique sans intermédiaire.
+                <a href="https://www.delta.kim/en/download">Delta Kim</a> is a cutting-edge decentralized finance (DeFi) app that lets you <strong>mine digital currency</strong> for free and manage <strong>cross-chain assets</strong> without private keys. Download the Delta Kim app and use my referral code <strong>B6C0EWUCEGPD8</strong> to get started!
             </p>
-            <p>
-                Basé sur les standards DID (Decentralized Identifiers), Delta Referrer DID offre une interopérabilité avec diverses applications, des services financiers aux réseaux sociaux. Découvrez une alternative moderne aux systèmes centralisés.
-            </p>
-            <img src="delta-referrer-did.jpg" alt="Illustration de Delta Referrer DID" loading="lazy">
+            <img src="delta-kim-app.jpg" alt="Delta Kim App for Referrer DID" loading="lazy">
         </section>
         <section>
-            <h2>Pourquoi utiliser le code B6C0EWUCEGPD8 ?</h2>
+            <h2>Why Use My Referral Code B6C0EWUCEGPD8?</h2>
+            <p>
+                As a Delta Kim influencer, I’m sharing my referral code <strong>B6C0EWUCEGPD8</strong> to help you join the platform and support my content. Use this code to sign up through the app and dive into the world of DeFi with Delta Kim’s secure and user-friendly features.
+            </p>
             <ul>
-                <li>Accès rapide à la plateforme Delta Kim Network.</li>
-                <li>Sécurité renforcée grâce à la cryptographie.</li>
-                <li>Contrôle total de vos données personnelles.</li>
+                <li>Energy-efficient mining.</li>
+                <li>Secure management of digital assets.</li>
+                <li>Simple, accessible interface for everyone.</li>
             </ul>
         </section>
         <section>
-            <h2>Comment l'utiliser ?</h2>
+            <h2>How to Use the Referral Code?</h2>
             <p>
-                Rendez-vous sur <a href="https://www.delta.kim/en/download">Delta Kim Network</a>, entrez le code <strong>B6C0EWUCEGPD8</strong> lors de votre inscription, et configurez votre identifiant décentralisé pour une authentification fluide.
+                1. Download the Delta Kim app from <a href="https://www.delta.kim/en/download">delta.kim</a>.<br>
+                2. Create an account.<br>
+                3. Enter the referral code <strong>B6C0EWUCEGPD8</strong> in the referral section.<br>
+                4. Start mining and managing your assets!
             </p>
         </section>
     </main>
     <footer>
-        <p>© 2025 Delta Kim Network. <a href="https://www.delta.kim/en/download">En savoir plus</a></p>
+        <p>© 2025 Delta Kim Influencer. <a href="https://www.delta.kim/en/download">Download Delta Kim</a></p>
     </footer>
+    <script>
+        // Copy code on click
+        function copyCode() {
+            navigator.clipboard.writeText("B6C0EWUCEGPD8");
+            alert("Code copied: B6C0EWUCEGPD8");
+        }
+
+        // Particle background animation
+        const canvas = document.getElementById('particles');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        const particlesArray = [];
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 5 + 1;
+                this.speedX = Math.random() * 3 - 1.5;
+                this.speedY = Math.random() * 3 - 1.5;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.size > 0.2) this.size -= 0.1;
+            }
+            draw() {
+                ctx.fillStyle = 'rgba(0, 163, 255, 0.8)';
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+        function init() {
+            for (let i = 0; i < 100; i++) {
+                particlesArray.push(new Particle());
+            }
+        }
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            for (let i = 0; i < particlesArray.length; i++) {
+                particlesArray[i].update();
+                particlesArray[i].draw();
+                if (particlesArray[i].size <= 0.2) {
+                    particlesArray.splice(i, 1);
+                    i--;
+                    particlesArray.push(new Particle());
+                }
+            }
+            requestAnimationFrame(animate);
+        }
+        init();
+        animate();
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
 </body>
 </html>
