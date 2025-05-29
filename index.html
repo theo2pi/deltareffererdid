@@ -8,9 +8,9 @@
     <meta name="keywords" content="Delta Referrer DID, Delta Kim, B6C0EWUCEGPD8, Delta Kim referral code, decentralized finance, Delta Kim app">
     <meta name="author" content="Delta Kim Influencer">
     <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123456789-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -51,6 +51,18 @@
             color: #F5A623;
             text-shadow: 0 0 5px rgba(245, 166, 35, 0.5);
             animation: pulse 2s infinite;
+            cursor: pointer; /* Indique que le titre est cliquable */
+        }
+        /* Style pour le message de copie */
+        .copy-message {
+            opacity: 0;
+            color: #34C759;
+            font-size: 1em;
+            margin-top: 10px;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .copy-message.show {
+            opacity: 1;
         }
         .referral-code {
             display: inline-block;
@@ -72,7 +84,6 @@
             box-shadow: 0 0 15px rgba(245, 166, 35, 0.7);
             cursor: pointer;
         }
-        /* Style pour les boutons de téléchargement */
         .download-buttons {
             display: flex;
             justify-content: center;
@@ -160,8 +171,10 @@
 <body>
     <canvas id="particles"></canvas>
     <header>
-        <img src="delta-logo.png" alt="Delta Kim Logo" class="logo">
-        <h1>Join Delta Kim with My Delta Referrer DID: B6C0EWUCEGPD8</h1>
+        <img src="delta-kim-app.png" alt="Delta Kim Logo" class="logo">
+        <h1 onclick="copyCode()">Join Delta Kim with My Delta Referrer DID: B6C0EWUCEGPD8</h1>
+        <!-- Div pour le message de copie -->
+        <div id="copyMessage" class="copy-message">Code B6C0EWUCEGPD8 copied!</div>
     </header>
     <main>
         <section>
@@ -175,7 +188,6 @@
             </p>
             <img src="delta-kim-app.jpg" alt="Delta Kim App with Delta Referrer DID B6C0EWUCEGPD8" loading="lazy">
         </section>
-        <!-- Nouvelle section pour les boutons de téléchargement -->
         <section class="download-buttons">
             <a href="https://apps.apple.com/us/app/delta-kim/id6738377112" class="download-button" aria-label="Download Delta Kim on the App Store">
                 <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -266,7 +278,13 @@
     <script>
         function copyCode() {
             navigator.clipboard.writeText("B6C0EWUCEGPD8");
-            alert("Code copied: B6C0EWUCEGPD8");
+            // Afficher le message de copie
+            const copyMessage = document.getElementById('copyMessage');
+            copyMessage.classList.add('show');
+            // Cacher le message après 3 secondes
+            setTimeout(() => {
+                copyMessage.classList.remove('show');
+            }, 3000);
         }
         const canvas = document.getElementById('particles');
         const ctx = canvas.getContext('2d');
