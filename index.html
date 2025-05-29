@@ -10,19 +10,19 @@
     <meta name="robots" content="index, follow">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Google Analytics (replace 'your-tracking-id' with your actual ID) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=your-tracking-id"></script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123456789-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'your-tracking-id');
+        gtag('config', 'UA-123456789-1');
     </script>
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
-            background: #1C2526; /* Gris foncé inspiré du logo */
-            color: #F5F5F5; /* Blanc cassé pour le texte */
+            background: #1C2526;
+            color: #F5F5F5;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
@@ -48,7 +48,7 @@
         }
         h1 {
             font-size: 2.5em;
-            color: #F5A623; /* Orange du logo */
+            color: #F5A623;
             text-shadow: 0 0 5px rgba(245, 166, 35, 0.5);
             animation: pulse 2s infinite;
         }
@@ -57,7 +57,7 @@
             font-size: 1.8em;
             font-weight: bold;
             color: #FFFFFF;
-            background: linear-gradient(45deg, #F5A623, #34C759); /* Dégradé orange-vert */
+            background: linear-gradient(45deg, #F5A623, #34C759);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             padding: 15px 25px;
@@ -71,6 +71,34 @@
             transform: scale(1.1);
             box-shadow: 0 0 15px rgba(245, 166, 35, 0.7);
             cursor: pointer;
+        }
+        /* Style pour les boutons de téléchargement */
+        .download-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .download-button {
+            display: inline-flex;
+            align-items: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #F5F5F5;
+            background: #333333;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid #F5A623;
+        }
+        .download-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(245, 166, 35, 0.7);
+        }
+        .download-button svg {
+            margin-right: 10px;
+            fill: #F5A623;
         }
         @keyframes pulse {
             0% { transform: scale(1); }
@@ -120,9 +148,11 @@
             .referral-code { font-size: 1.4em; padding: 10px 15px; }
             .logo { max-width: 150px; }
             header, main, footer { padding: 15px; }
+            .download-buttons { flex-direction: column; gap: 15px; }
+            .download-button { font-size: 1em; padding: 8px 15px; }
         }
         @media (prefers-reduced-motion: reduce) {
-            .referral-code, h1 { animation: none; }
+            .referral-code, h1, .download-button { animation: none; }
             canvas { display: none; }
         }
     </style>
@@ -141,9 +171,24 @@
                 A Delta Referrer DID, such as my code <strong>B6C0EWUCEGPD8</strong>, is a unique referral identifier for joining <a href="https://www.delta.kim/en/download">Delta Kim</a>, a decentralized finance (DeFi) app. It allows you to mine crypto 33% faster and manage cross-chain assets securely.
             </p>
             <p>
-                As an influencer, I am excited to share my Delta Referrer DID code <strong>B6C0EWUCEGPD8</strong> to help you get started. Download the Delta Kim app today and start your DeFi journey!
+                As an influencer, I’m excited to share my Delta Referrer DID code <strong>B6C0EWUCEGPD8</strong> to help you get started. Download the Delta Kim app today and start your DeFi journey!
             </p>
-            <img src="delta-logo.png" alt="Delta Kim App with Delta Referrer DID B6C0EWUCEGPD8" loading="lazy">
+            <img src="delta-kim-app.jpg" alt="Delta Kim App with Delta Referrer DID B6C0EWUCEGPD8" loading="lazy">
+        </section>
+        <!-- Nouvelle section pour les boutons de téléchargement -->
+        <section class="download-buttons">
+            <a href="https://apps.apple.com/us/app/delta-kim/id6738377112" class="download-button" aria-label="Download Delta Kim on the App Store">
+                <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.02-1.77-.79-3.29-.79-1.53 0-2 .79-3.29.81-1.34.02-2.22-1.23-3.05-2.47-1.71-2.5-3-7.09-1.24-10.18.83-1.53 2.32-2.47 3.94-2.47 1.24 0 2.45.79 3.29.79 1.24 0 2.45-.79 3.29-.79 1.53 0 2.85.94 3.94 2.47-.83.94-1.24 2.26-1.24 3.58 0 1.77.62 3.29 1.55 4.38-.62 1.24-1.24 2.47-1.85 3.29zM12 4.15c0 1.24-.94 2.47-2.26 2.47-1.24 0-2.26-1.24-2.26-2.47 0-1.24.94-2.47 2.26-2.47 1.24 0 2.26 1.24 2.26 2.47z"/>
+                </svg>
+                Download on the App Store
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=kim.delta.mobile" class="download-button" aria-label="Get Delta Kim on Google Play">
+                <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 20.5v-17l11 6.5-11 6.5zm1.8-15.6v13.2l7.6-6.6-7.6-6.6zm9.2 6.6l4.2-2.4-11.5-6.8-1.5 2.6 8.8 6.6zm4.2 2.4l-4.2-2.4-8.8 6.6 1.5 2.6 11.5-6.8z"/>
+                </svg>
+                Get it on Google Play
+            </a>
         </section>
         <section>
             <h2>What Makes Delta Kim Unique?</h2>
@@ -154,25 +199,25 @@
         <section>
             <h2>Why Choose Delta Kim for DeFi?</h2>
             <p>
-                Delta Kim stands out in the DeFi space by offering a user-friendly interface and cutting-edge features. With my Delta Referrer DID code <strong>B6C0EWUCEGPD8</strong>, you can quickly sign up and explore the future of decentralized finance. Whether you are new to crypto or a seasoned user, Delta Kim makes managing digital assets simple and secure.
+                Delta Kim stands out in the DeFi space by offering a user-friendly interface and cutting-edge features. With my Delta Referrer DID code <strong>B6C0EWUCEGPD8</strong>, you can quickly sign up and explore the future of decentralized finance. Whether you’re new to crypto or a seasoned user, Delta Kim makes managing digital assets simple and secure.
             </p>
         </section>
         <section>
             <h2>Benefits of Using My Referral Code B6C0EWUCEGPD8</h2>
             <p>
-                As a Delta Kim influencer, I am sharing my referral code <strong>B6C0EWUCEGPD8</strong> to help you get started and support my content. By using this code, you will gain access to Delta Kims powerful features, including the ability to <strong>mine 33% faster</strong>. <strong>Click to discover more benefits!</strong>
+                As a Delta Kim influencer, I’m sharing my referral code <strong>B6C0EWUCEGPD8</strong> to help you get started and support my content. By using this code, you’ll gain access to Delta Kim’s powerful features, including the ability to <strong>mine 33% faster</strong>. <strong>Click to discover more benefits!</strong>
             </p>
             <ul>
-                <li>Mine 33% faster with my referral code B6C0EWUCEGPD8 ! start earning crypto quicker!</li>
-                <li>Free, energy-efficient crypto mining ! save on costs while you mine.</li>
-                <li>Secure cross-chain asset management ! manage assets across blockchains safely.</li>
-                <li>Intuitive app interface for all users ! perfect for beginners and experts.</li>
+                <li>Mine 33% faster with my referral code B6C0EWUCEGPD8 – start earning crypto quicker!</li>
+                <li>Free, energy-efficient crypto mining – save on costs while you mine.</li>
+                <li>Secure cross-chain asset management – manage assets across blockchains safely.</li>
+                <li>Intuitive app interface for all users – perfect for beginners and experts.</li>
             </ul>
         </section>
         <section>
             <h2>Looking for a Delta Kim Referral Code?</h2>
             <p>
-                Use my Delta Kim referral code <strong>B6C0EWUCEGPD8</strong> to join the Delta Kim app and mine crypto 33% faster. Download now from <a href="https://www.delta.kim/en/download">delta.kim</a>!
+                Use my Delta Kim referral code <strong>B6C0EWUCEGPD8</strong> to join the Delta Kim app and mine crypto 33% faster. Download now from the links above!
             </p>
         </section>
         <section>
@@ -183,7 +228,7 @@
             </p>
             <h3>How do I use a Delta Referrer DID on Delta Kim?</h3>
             <p>
-                Download the Delta Kim app from <a href="https://www.delta.kim/en/download">delta.kim</a>, create an account, and enter the Delta Referrer DID code <strong>B6C0EWUCEGPD8</strong> during registration.
+                Download the Delta Kim app from the links above, create an account, and enter the Delta Referrer DID code <strong>B6C0EWUCEGPD8</strong> during registration.
             </p>
         </section>
         <section>
@@ -192,7 +237,7 @@
                 A Delta Kim referral code, like my code <strong>B6C0EWUCEGPD8</strong>, gives you exclusive benefits when you sign up. Not only do you get access to Delta Kim’s DeFi features, but you’ll also mine 33% faster, helping you earn crypto more efficiently.
             </p>
             <ol>
-                <li>Download the Delta Kim app from <a href="https://www.delta.kim/en/download">delta.kim</a>.</li>
+                <li>Download the Delta Kim app using the buttons above.</li>
                 <li>Create your account.</li>
                 <li>Enter the Delta Referrer DID code <strong>B6C0EWUCEGPD8</strong> in the referral section.</li>
                 <li>Start mining and managing your digital assets!</li>
@@ -219,13 +264,10 @@
     }
     </script>
     <script>
-        // Copy code on click
         function copyCode() {
             navigator.clipboard.writeText("B6C0EWUCEGPD8");
             alert("Code copied: B6C0EWUCEGPD8");
         }
-
-        // Particle background animation
         const canvas = document.getElementById('particles');
         const ctx = canvas.getContext('2d');
         canvas.width = window.innerWidth;
@@ -245,7 +287,7 @@
                 if (this.size > 0.2) this.size -= 0.1;
             }
             draw() {
-                ctx.fillStyle = '#34C759'; /* Vert du logo */
+                ctx.fillStyle = '#34C759';
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
                 ctx.fill();
